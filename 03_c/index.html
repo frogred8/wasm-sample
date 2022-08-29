@@ -1,0 +1,7 @@
+<script src="a.out.js"></script>
+<script>
+Module.onRuntimeInitialized = _ => {
+  const calc = Module.cwrap('calc', 'number', ['number', 'number']);
+  console.log('calc:', calc(10, 20));
+};
+</script>

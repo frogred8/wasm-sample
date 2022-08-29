@@ -1,0 +1,7 @@
+<!-- <script type="module" src="./pkg/calc_wasm.js"></script> -->
+<script type="module">
+    import init from "./pkg/calc_wasm.js";
+    init().then((js) => {
+        console.log(js.calc(10,20));
+    });
+</script>
